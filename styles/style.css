@@ -81,22 +81,22 @@ hr{
 }
 
 /* cources style */
-.cources{
+.courses{
     display: flex;
     justify-content: center;
 }
-.cource{
+.course{
     box-shadow: 2px 2px 20px lightgray;
     padding: 20px;
     margin:10px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
- .cource-banner img{
+ .course-banner img{
     width: 224px;
     height: 104px;
 }
-.cource-info{
+.course-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,12 +104,38 @@ hr{
 .fa-star.filled{
     color: gold;
 }
-.cource-duration{
+.course-duration{
     background-color: rgba(218, 7, 246, 0.253);
     padding: 5px;
     color: rgb(255, 0, 212);
     border-radius: 20px;
+    
 }
 .empty{
     color: rgb(206, 205, 201);
+} 
+
+/* Media  Queries */
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
+   
+}
+/* Tablet Devicec */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
 }
