@@ -58,7 +58,7 @@ hr{
     grid-row-gap: 26;
 }
 .blog{
-    display: flex;
+    display:flex;
 }
 .blog .thumbnail img{
     width: 177px;
@@ -83,7 +83,7 @@ hr{
 /* cources style */
 .cources{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;;
+    grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
 }
 .cource .cource-banner img{
